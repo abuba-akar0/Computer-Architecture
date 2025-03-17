@@ -1,0 +1,24 @@
+START:
+    INP         ; Read first number
+    STA NUM1    ; Store in NUM1
+
+    INP         ; Read second number
+    STA NUM2    ; Store in NUM2
+
+    INP         ; Read third number
+    STA NUM3    ; Store in NUM3
+
+    LDA NUM1    ; Load NUM1 into AC
+    ADD NUM2    ; Add NUM2 to AC
+    ADD NUM3    ; Add NUM3 to AC
+    STA RESULT  ; Store final sum
+
+    LDA RESULT  ; Load final result into AC
+    OUT         ; Output the sum
+
+    HLT         ; Halt execution
+
+NUM1: .data 1 0  
+NUM2: .data 1 0  
+NUM3: .data 1 0  
+RESULT: .data 1 0  

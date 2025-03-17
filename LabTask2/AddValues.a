@@ -1,0 +1,7 @@
+START:  INP       ; Input value -> AC
+        STA NUM   ; Store AC into memory location NUM
+        INP       ; Input second value -> AC
+        ADD NUM   ; AC = AC + NUM
+        OUT       ; Output result
+        HLT       ; Halt Execution
+NUM: .data 1 0

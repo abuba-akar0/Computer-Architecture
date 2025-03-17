@@ -1,0 +1,27 @@
+START:
+    INP         ; Read first number from user
+    STA NUM1    ; Store in NUM1
+    INP         ; Read second number from user
+    STA NUM2    ; Store in NUM2
+    LDA NUM1    ; Load NUM1 into AC
+    ADD NUM2    ; Add NUM2 (AC = NUM1 + NUM2)
+    STA TEMP1   ; Save intermediate sum
+    LDA NUM3    ; Load hard-coded value 2
+    CMA         ; Complement to start two's complement conversion
+    INC         ; Complete two's complement (AC = -2)
+    STA NEGNUM3 ; Store negative of NUM3
+    LDA TEMP1   ; Reload intermediate sum
+    ADD NEGNUM3 ; Subtract NUM3 (AC = NUM1 + NUM2 - NUM3)
+    ADD NUM4    ; Add hard-coded value 1
+    STA RESULT  ; Store final result
+    LDA RESULT  ; Load result into AC
+    OUT         ; Output the result
+    HLT         ; Halt execution
+
+NUM1:    .data 1 0
+NUM2:    .data 1 0
+NUM3:    .data 1 2 ;hardcoded value 2
+NUM4:    .data 1 1 ;hardcoded value 1
+TEMP1:   .data 1 0
+NEGNUM3: .data 1 0
+RESULT:  .data 1 0

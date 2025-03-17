@@ -1,0 +1,9 @@
+START:
+    INP         ; Read input into AC
+    STA VALUE   ; Store the input in VALUE
+    LDA VALUE   ; Load VALUE into AC
+    NOT         ; Perform bitwise NOT (complement AC)
+    OUT         ; Output the result
+    HLT         ; Halt execution
+
+VALUE: .data 1 0
