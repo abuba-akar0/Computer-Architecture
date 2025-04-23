@@ -1,0 +1,27 @@
+START:    
+   INP           
+   STA NUM       
+   LDA NUM       
+   SPA           
+   JMP NEGATIVE  
+   CLA         
+   LDA POS_MSG   
+   OUT           
+   JMP END       
+NEGATIVE:         
+   SNA           
+   JMP ZERO      
+   CLA           
+   LDA NEG_MSG   
+   OUT           
+   JMP END
+ZERO:
+   CLA           
+   ISZ ZERO_MSG  
+   OUT           
+END:
+   HLT       
+NUM:       .data 1 0         
+POS_MSG:   .data 1 1        
+NEG_MSG:   .data 1 -1        
+ZERO_MSG:  .data 1 0

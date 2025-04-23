@@ -1,0 +1,11 @@
+START:
+INP        ; Take an input from the user
+STA NUM    ; Store the input value in memory location NUM
+INP        ; Take another input from the user
+ADD NUM    ; Add the value stored in NUM to the second input STA NUM    ; Store the input value in memory location NUM
+SPA
+ADD NUM1
+OUT        ; Output the result
+HLT        ; Halt (end program)
+NUM: .data 1 0  ; Define memory location NUM, initialized with 0 NUM1: .data 1 100
+NUM1: .data 1 100
