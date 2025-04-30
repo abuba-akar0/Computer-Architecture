@@ -2,7 +2,7 @@
 
 ## 📚 Overview
 
-This repository contains the implementation of **basic logic gates, combinational circuits, and arithmetic circuits** using **Proteus Design Suite**. The lab was conducted as part of the **Computer Architecture (Spring-2025)** course at **Riphah International University, I-14 Campus**.
+This repository contains the implementation of **basic logic gates, combinational circuits, and arithmetic circuits** using **Proteus Design Suite**.
 
 The objective was to design, simulate, and verify various digital circuits like adders, subtractors, multiplexers, and decoders using digital logic gates and arithmetic principles.
 
