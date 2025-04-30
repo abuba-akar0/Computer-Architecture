@@ -12,8 +12,7 @@ Welcome to the **Computer Architecture** repository! 🚀 This repository contai
 
 ```
 📦 Computer-Architecture
-├── 📁 CPUSIM
-├── 📁 Assignments
+├── 📁 Labtasks
 └── README.md
 ```
 
