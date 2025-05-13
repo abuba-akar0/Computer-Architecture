@@ -1,0 +1,10 @@
+v2.0 raw
+
+b000  ###  PUSH 0x3         ; Number 1
+b001  ###  PUSH 0x4         ; Number 2
+0010  ###  POP r0           ; r0 = 0x4
+0011  ###  POP r1           ; r1 = 0x3
+0212  ###  ADD r2, r0, r1   ; r2 = 0x4 + 0x3 = 0x7
+1013  ###  LD r3, 0xD       ; r3 = newline code
+3214  ###  DISP r2, r3      ; Display r2, then newline
+
